@@ -3,8 +3,6 @@ body{
     list-style: none;
     background-image: url(../multimedia/6173954.jpg);
     background-position:center;
-
-
     background-color: rgba(225, 238, 239, 0.732);
     opacity: 95%;
     height: 100vh;
@@ -18,12 +16,8 @@ a:link, a:visited, a:active {
 
 #navbar {
     background-color: rgb(84, 134, 134) ;
-
 }
-#navbar ul{
-    background-color: rgb(84, 134, 134) ;
 
-}
 
 #navbar img{
     margin-bottom: 10px;
@@ -31,6 +25,7 @@ a:link, a:visited, a:active {
 /*Pie de pagina*/
 #pie-conteiner{
     background-color: rgba(255, 255, 255, 0.069);
+    margin: 1rem;
 }
 .pie-de-pagina{
     padding: 1rem;
@@ -228,36 +223,29 @@ color: rgba(140, 170, 166, 0.938);
     text-align: center;
     padding: 10px;
     margin: 10px;
-    
+    color: white;
+    background-color: rgba(255, 255, 255, 0.069);
+
 }
 .Introduccion span{
     font-size: 50px;
     border-radius: 1em;
     padding: 10px;
     color: white;
-    box-shadow: 1px 1px 1px 1px grey;
     background-color: rgb(93, 146, 146);
 }
 .Introduccion p{
     margin: 20px;
 }
 
-.Psicotarjeta {
-    grid-area: psicotarjeta;
-    height: 500px;
+#Psicotarjeta {
     justify-self: center;
-    width: 500px;
     border-radius: 1em;
-    box-shadow: 1px 1px 1px 1px grey;
     background-color:  rgb(93, 146, 146);
     overflow: hidden;
-    margin: 10px;
-    margin-bottom: 10px;
 }
 
 .portadapsic{
-    width: 500px;
-    height: 500px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -265,8 +253,8 @@ color: rgba(140, 170, 166, 0.938);
 }
 
 .portadapsic img{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
 
 }
@@ -275,7 +263,6 @@ color: rgba(140, 170, 166, 0.938);
 .infopsic{
     display: flex;
     flex-direction: column;
-    width: 500px;
     height:0px;
     text-align: center;
     justify-content: center;
@@ -287,32 +274,24 @@ color: rgba(140, 170, 166, 0.938);
     margin: 20px;
 }
 
-div.Psicotarjeta:hover div.portadapsic{
+#Psicotarjeta:hover div.portadapsic{
     height: 0px ;
     width: 0px;
 }
 
-div.Psicotarjeta:hover div.infopsic{
-    width: 500px;
+#Psicotarjeta:hover div.infopsic{
     height:500px;
 }
 
-.cognitarjeta{
-    grid-area: cognitarjeta;
-    height: 500px;
+#cognitarjeta{
     justify-self: center;
-    width:500px;
     border-radius: 1em;
-    box-shadow: 1px 1px 1px 1px grey;
     background-color:  rgb(93, 146, 146);
     overflow: hidden;
-    margin: 10px;
-    margin-bottom: 10px;
+
 }
 
 .portadacogni{    
-    width: 500px;
-    height: 500px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -320,16 +299,15 @@ div.Psicotarjeta:hover div.infopsic{
 
 }
 .portadacogni img{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
 }
 
 .infocogni{
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height:0px;
+    height: 0px;
     text-align: center;
     justify-content: center;
     background-color:  rgba(50, 84, 84, 0.62);
@@ -340,13 +318,12 @@ div.Psicotarjeta:hover div.infopsic{
     margin:20px;
 }
 
-div.cognitarjeta:hover div.portadacogni{
+#cognitarjeta:hover div.portadacogni{
     height: 0px ;
     width: 0px;
 }
 
-div.cognitarjeta:hover div.infocogni{
-    width: 500px;
+#cognitarjeta:hover div.infocogni{
     height:500px;
 }
 
