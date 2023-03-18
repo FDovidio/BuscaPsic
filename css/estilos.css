@@ -249,9 +249,28 @@ color: rgba(140, 170, 166, 0.938);
 
 #cognitarjeta:hover div.infocogni{
     height:500px;
+
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1080px) {
+    #Psicotarjeta:active div.portadapsic{
+        height: 0px ;
+        width: 0px;
+    }
+    
+    #Psicotarjeta:active div.infopsic{
+        height:500px;
+    
+    }
 
+    #cognitarjeta:active div.portadacogni{
+        height: 0px ;
+        width: 0px;
+    }
+    
+    #cognitarjeta:active div.infocogni{
+        height:500px;
+    
+    }
 }
