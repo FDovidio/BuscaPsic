@@ -1,76 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=buscapsic, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Contacto</title>
-</head>
-<body class="contacto-body">
-    <header class="encabezado">
-        <div class="logo">
-            <img src="../multimedia/kisspng-psychology-symbol-psychotherapist-semana-da-psicol-psicologa-social-5cc757fa32f1f8.8039736715565680582087.png" alt="">
-            <h1><a href="./index.html">BuscaPsic</a></h1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <body>
+
+<!--Barra de navegacion-->
+<div class="conteiner-fluid">
+<div class="row">
+    <nav class="navbar navbar-expand-lg" id="navbar" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../Pre-entrega2-DovidioFrancisco/index.html">
+        <img src="../multimedia/kisspng-psychology-symbol-psychotherapist-semana-da-psicol-psicologa-social-5cc757fa32f1f8.8039736715565680582087(1).png" alt="Logo" width="30" height="35" class="d-inline-block align-text-center ms-2"></a>
+        <h3>BuscaPsic</h3>
+        
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-1 ms-3 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" href="../Pre-entrega2-DovidioFrancisco/html/orientacion.html">Orientacion</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./html/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./html/Buscar.html">Buscar</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./html/ingresg.html">Ingresar/Registrarse</a>
+            </li>
+            </ul>
+                </div>
         </div>
-    </header>
-        <!--Barra de navegacion-->
-    <nav class="nav">
-        <input type="checkbox" id="check-menu">
-        <label for="check-menu" class="menu"><i class="bx bx-menu"></i>
-        </label>
-        <div class="nav--cerebro">
-            <i class='bx bx-brain bx-flip-horizontal' ></i>
+            </nav>
         </div>
-        <ul>       
-            <li><i class='bx bx-brain bx-flip-horizontal' ></i><a href="index.html">Home</a></li>
-            <li><i class='bx bx-brain bx-flip-horizontal' ></i><a href="contacto.html">Contacto</a></li>
-            <li><i class='bx bx-brain bx-flip-horizontal' ></i><a href="./orientacion.html">Orientacion</a></li>
-            <li><i class='bx bx-brain bx-flip-horizontal' ></i><a href="./ingresg.html">Registrarse/Ingresar</a></li>
-        </ul>
-   
+        </div>
+
+<!--Banner-->
+<div class="conteiner-fluid">
+    <div class="row">
+        <div class="col">
+    <nav class="navbar navbar-light m-1" id="banner">
+        <div class="container-fluid p-4" id="banner-text">
+        <h1>
+            Contactanos
+        </h1>
+        </div>
     </nav>
-        <!--Contenido y barra de filtros-->
-            <div class="banner">
-                <h2>Comunicate con nosotros</h2>
-            </div>
-        
-        <form class="contacto">
-        
-        <div>
-        <h3>Email</h3>
-        <input type="text">
-    </div>
-    <div>
-        <h3>Fecha de Nacimietno</h3>
-        <input type="date" name="fechadenacimiento" id="">
-    </div>
-    <div>
-        <h3>Numero de Documento</h3>
-        <input type="text" name="numerodedocumento" id="">
-    </div>
-    
-    <div class="consulta">
-        <h3>Consulta</h3>
-        <textarea name="consulta" id="" cols="30" rows="10"></textarea>
-    </div>
-    
-    <div class="botones">
-        <p></p>
-        <input type="submit" value="Consultar">
-        <input type="reset" value="Reset">
-    </div>
-    
+</div>
+</div>
+</div>
+<!--Form-->
+<div class="conteiner-fluid">
+    <div class="row">
+        <div class="col p-2" id="contacto">
+            <form>
+        <div class="mb-3">
+                <label for="InputEmail" class="form-label fs-4">Email</label>
+                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                </div>
+        <div class="mb-3">
+                <label for="Inputfechadenac" class="form-label fs-4">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="Inputfechadenac" aria-describedby="fechadenacHelp">
+        </div>
+        <div class="mb-3">
+            <label for="Inputdni" class="form-label fs-4">Numero de documento</label>
+            <input type="text" class="form-control" id="Inputdni" aria-describedby="dniHelp">
+        </div>
+        <div class="mb-3">
+            <label for="Inputconsulta" class="form-label fs-3 d-flex">Consulta</label>
+            <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+        </div>
+        <div class="mb-3">
+            <button type="button" class="btn btn-primary btn-sm">Enviar</button>
+            <button type="button" class="btn btn-secondary btn-sm">Reset</button>
+        </div>
     </form>
-    <!--Pie de pagina-->
-<section class="pie-de-pagina" id="piecontacto">
-    <ul>
-        <li><a href="">Cookies</a</li>
-        <li><a href="">Creditos</a></li>
-        <li><a href="">Politica de privacidad</a></li>
-        </ul>
-</section>
+        </div>
+        </div>
+    </div>
+<!--Pie de pagina-->
+<div class="conteiner-fluid">
+    <div class="row p-2" id="pie-conteiner">
+        <div class="col">
+        <section class="pie-de-pagina">
+            <ul>
+                <li><a href="">- Cookies</a></li>
+                <li><a href="">- Creditos</a></li>
+                <li><a href="">- Politica de privacidad</a></li>
+                <li><a href="./index.html">- Inicio</a></li>
+                </ul>
+        </section>
+        </div>
+        <div class="col-5" id="">
+            <img src="../multimedia/índice.png" class="rounded float-end p-3 m-2" id="imagen-pie" alt="...">
+        </div>
+    </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>
