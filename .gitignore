@@ -248,9 +248,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-scss/
-
-Backup-css/
+*scss
+*Backup-css
 
 # End of https://www.toptal.com/developers/gitignore/api/osx,windows,node,polymer,sublimetext,text
 
