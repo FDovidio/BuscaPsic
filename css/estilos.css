@@ -177,8 +177,8 @@ color: rgba(140, 170, 166, 0.938);
 }
 
 .portadapsic img{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 300px;
     overflow: hidden;
 
 }
@@ -204,7 +204,7 @@ color: rgba(140, 170, 166, 0.938);
 }
 
 #Psicotarjeta:hover div.infopsic{
-    height:500px;
+    height:300px;
 }
 
 #cognitarjeta{
@@ -223,8 +223,8 @@ color: rgba(140, 170, 166, 0.938);
 
 }
 .portadacogni img{
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -235,7 +235,7 @@ color: rgba(140, 170, 166, 0.938);
     text-align: center;
     justify-content: center;
     background-color:  rgba(50, 84, 84, 0.62);
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .infocogni h3{
@@ -248,7 +248,7 @@ color: rgba(140, 170, 166, 0.938);
 }
 
 #cognitarjeta:hover div.infocogni{
-    height:500px;
+    height:300px;
 
 }
 
