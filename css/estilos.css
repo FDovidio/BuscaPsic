@@ -3,11 +3,9 @@ body{
     list-style: none;
     background-image: url(../multimedia/6173954.jpg);
     background-position:center;
-    background-size:100%;
-    background-color: rgba(225, 238, 239, 0.732);
+    background-size:contain;git 
     opacity: 95%;
     height: 100vh;
-    width:auto;
 }
 a:link, a:visited, a:active {
     text-decoration:none;
@@ -132,10 +130,6 @@ color: rgba(140, 170, 166, 0.938);
 
 }
 
-.contacto input {
-    border-radius: 1em;
-    background-color: rgb(103, 149, 149);
-}
 
 #consulta{
     border-radius: 1em;
