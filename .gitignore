@@ -79,8 +79,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#Archivos/carpetas propios
-*scss
-*backup-css
-
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode
+
+
+*Backup-css
+*scss
