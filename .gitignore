@@ -80,7 +80,7 @@ $RECYCLE.BIN/
 *.lnk
 
 #Archivos/carpetas propios
-*styke.scss
-*Backup-css
+*scss
+*backup-css
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode
