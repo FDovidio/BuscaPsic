@@ -1,0 +1,260 @@
+body {
+  list-style: none;
+  background-image: url(../multimedia/6173954.jpg);
+  background-position: center;
+  background-size: contain;
+  opacity: 95%;
+  height: 100vh;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+/*Barra de navegacion*/
+#navbar {
+  background-color: rgb(84, 134, 134);
+}
+#navbar img {
+  margin-bottom: 10px;
+}
+
+/*Pie de pagina*/
+#pie-conteiner {
+  background-color: rgba(255, 255, 255, 0.069);
+  margin: 0.5rem;
+}
+#pie-conteiner .pie-de-pagina {
+  padding: 1rem;
+}
+#pie-conteiner .pie-de-pagina li {
+  padding: 4px;
+  list-style: none;
+}
+#pie-conteiner .pie-de-pagina a {
+  color: white;
+}
+#pie-conteiner #imagen-pie {
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.069);
+}
+
+/*Index*/
+.carousel-inner {
+  max-height: 700px;
+}
+.carousel-inner #card img {
+  height: 20rem;
+}
+
+/*Buscar*/
+.buscadorlateral {
+  background-color: rgb(84, 134, 134);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 1em;
+  padding: 15px;
+}
+.buscadorlateral input {
+  background-color: rgb(212, 245, 245);
+}
+@media screen and (max-width: 1080px) {
+  .buscadorlateral {
+    min-width: 50%;
+  }
+}
+
+#card {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(140, 170, 166, 0.938);
+}
+#card img {
+  height: 20rem;
+}
+
+/*Registrarse*/
+.form-ingresg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: none;
+  border: none;
+  border-radius: 1em;
+  background-color: rgb(84, 134, 134);
+  color: rgba(255, 255, 255, 0.902);
+  max-width: 600px;
+}
+.form-ingresg input {
+  border: 0;
+  border-radius: 1em;
+  background-color: rgb(212, 245, 245);
+  padding: 5px;
+}
+
+.form-registrarse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: none;
+  border: none;
+  border-radius: 1em;
+  background-color: rgba(47, 108, 108, 0.741);
+  color: rgba(255, 255, 255, 0.902);
+  max-width: 600px;
+}
+.form-registrarse input {
+  border: 0;
+  border-radius: 1em;
+  background-color: rgb(212, 245, 245);
+  padding: 5px;
+}
+
+/*Contacto*/
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: none;
+  padding: none;
+  background-color: rgb(84, 134, 134);
+  color: white;
+}
+#contacto #consulta {
+  border: none;
+  border-radius: 1em;
+}
+
+#banner {
+  background-color: rgba(255, 255, 255, 0.069);
+  color: none;
+}
+
+#banner-text {
+  display: flex;
+  justify-content: center;
+}
+
+/*Orientacion*/
+.Introduccion {
+  background-color: rgba(255, 255, 255, 0.069);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+.Introduccion span {
+  background-color: rgb(84, 134, 134);
+  color: white;
+  font-size: 50px;
+  border-radius: 1em;
+  padding: 10px;
+}
+.Introduccion p {
+  margin: 20px;
+}
+
+#Psicotarjeta {
+  justify-self: center;
+  border-radius: 1em;
+  background-color: rgb(84, 134, 134);
+  overflow: hidden;
+}
+#Psicotarjeta .portadapsic {
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: center;
+  padding: none;
+  background-color: rgb(84, 134, 134);
+  color: none;
+}
+#Psicotarjeta .portadapsic img {
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+}
+#Psicotarjeta .infopsic {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: center;
+  padding: none;
+  background-color: rgb(84, 134, 134);
+  color: none;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+#Psicotarjeta .infopsic h3 {
+  margin: 20px;
+}
+#Psicotarjeta:hover div.portadapsic {
+  width: 0px;
+  height: 0px;
+}
+#Psicotarjeta:hover div.infopsic {
+  height: 300px;
+}
+@media screen and (max-width: 1080px) {
+  #Psicotarjeta:active div.portadapsic {
+    width: 0px;
+    height: 0px;
+  }
+  #Psicotarjeta:active div.infopsic {
+    height: 500px;
+  }
+}
+
+#cognitarjeta {
+  justify-self: center;
+  border-radius: 1em;
+  background-color: rgb(84, 134, 134);
+  overflow: hidden;
+}
+#cognitarjeta .portadacogni {
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: center;
+  padding: none;
+  background-color: rgb(84, 134, 134);
+  color: none;
+}
+#cognitarjeta .portadacogni img {
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+}
+#cognitarjeta .infocogni {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: center;
+  padding: none;
+  background-color: rgb(84, 134, 134);
+  color: none;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+#cognitarjeta .infocogni h3 {
+  margin: 20px;
+}
+#cognitarjeta:hover div.portadacogni {
+  width: 0px;
+  height: 0px;
+}
+#cognitarjeta:hover div.infocogni {
+  height: 300px;
+}
+@media screen and (max-width: 1080px) {
+  #cognitarjeta:active div.portadapsic {
+    width: 0px;
+    height: 0px;
+  }
+  #cognitarjeta:active div.infopsic {
+    height: 500px;
+  }
+}/*# sourceMappingURL=style.css.map */

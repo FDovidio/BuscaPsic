@@ -1,0 +1,22 @@
+@mixin forma ($ancho , $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin flexible ($display , $flex-d , $align , $just, $padd ) {
+    display: $display;
+    flex-direction: $flex-d;
+    align-items: $align;
+    justify-content: $just;
+    padding: $padd;
+}
+
+@mixin borde ($espesor , $esquinas) {
+    border: $espesor;
+    border-radius: $esquinas;
+}
+
+@mixin color ($fondo, $color) {
+    background-color: $fondo;
+    color: $color;
+}

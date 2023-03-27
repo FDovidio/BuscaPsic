@@ -1,0 +1,213 @@
+@import "partials/body";
+@import "partials/mixin" ;
+@import "partials/reset" ;
+@import "partials/variables";
+
+
+/*Barra de navegacion*/
+
+#navbar {
+    background-color: $navbar-color ;
+    img{
+        margin-bottom: 10px;
+    }
+}
+
+/*Pie de pagina*/
+#pie-conteiner{
+    background-color: $fondo-tranparente;
+    margin: 0.5rem;
+    .pie-de-pagina{
+        padding: 1rem;
+        li {
+            padding: 4px;
+            list-style: none;
+        }
+        a {
+            color: white;
+        }
+    }
+    #imagen-pie{
+        height: 10rem;
+        background-color: $fondo-tranparente; 
+    }
+}
+
+/*Index*/
+.carousel-inner {
+    max-height: 700px;
+    #card img{
+        height: 20rem;
+    }
+}
+
+/*Buscar*/
+.buscadorlateral{
+    @include color ($navbar-color,rgb(255, 255, 255 ) );
+    @include borde (none, $rounded);
+    padding: 15px;
+    input{
+        background-color: $color-input;
+    }
+    @media screen and (max-width: 1080px) {
+        min-width: 50%;
+    }
+}
+
+#card{
+    background-color: rgba(255, 255, 255, 0);
+color: rgba(140, 170, 166, 0.938);
+img{
+    height: 20rem;
+}
+}
+
+/*Registrarse*/
+
+.form-ingresg {
+@include flexible (flex, column, center, center, none);
+@include borde (none, $rounded );
+@include color ($navbar-color, rgba(255, 255, 255, 0.902) );
+max-width: 600px;
+input{
+    @include borde (0, $rounded);
+    background-color: rgb(212, 245, 245);
+    padding: 5px;
+}
+}
+
+.form-registrarse {
+    @include flexible (flex, column, center, center, none);
+@include borde (none, $rounded );
+@include color (rgba(47, 108, 108, 0.741), rgba(255, 255, 255, 0.902) );
+max-width: 600px;
+input{
+    @include borde (0, $rounded);
+    background-color: rgb(212, 245, 245);
+    padding: 5px;
+}
+}
+
+/*Contacto*/
+
+#contacto {
+    @include flexible (flex, column, center, none, none);
+    @include color ($navbar-color, white);
+    #consulta{
+        @include borde (none, $rounded);
+    }
+}
+#banner{
+    @include color ($fondo-tranparente, none)
+}
+#banner-text{
+    display: flex;
+    justify-content: center;
+}
+
+/*Orientacion*/
+
+.Introduccion {
+    @include color ($fondo-tranparente, white);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    span {
+        @include color ($navbar-color, white);
+        font-size: 50px;
+        border-radius: 1em;
+        padding: 10px;
+    }
+    p{
+        margin: 20px;
+    }
+}
+
+#Psicotarjeta {
+    justify-self: center;
+    border-radius: $rounded;
+    background-color: $navbar-color;
+    overflow: hidden;
+    .portadapsic{
+        @include flexible (flex, none, center, center, none);
+        @include color ($navbar-color, none);
+        img{
+            @include forma (350px, 300px);
+            overflow: hidden;
+        }
+    }
+    .infopsic{
+        @include flexible (flex, column, none, center, none);
+        @include color ($navbar-color, none);
+        height:0px;
+        overflow: hidden;
+        text-align: center;
+        h3{
+            margin: 20px;
+        }
+    }
+    &:hover div.portadapsic{
+        @include forma (0px, 0px);
+    }
+    &:hover div.infopsic{
+        height:300px;
+    }
+
+    @media screen and (max-width: 1080px) {
+        &:active div.portadapsic{
+        @include forma (0px, 0px);
+        }
+        
+        &:active div.infopsic{
+            height:500px;
+        
+        }
+    }
+}
+
+
+#cognitarjeta {
+    justify-self: center;
+    border-radius: $rounded;
+    background-color: $navbar-color;
+    overflow: hidden;
+    .portadacogni{
+        @include flexible (flex, none, center, center, none);
+        @include color ($navbar-color, none);
+        img{
+            @include forma (350px, 300px);
+            overflow: hidden;
+        }
+    }
+    .infocogni{
+        @include flexible (flex, column, none, center, none);
+        @include color ($navbar-color, none);
+        height:0px;
+        overflow: hidden;
+        text-align: center;
+        h3{
+            margin: 20px;
+        }
+    }
+    &:hover div.portadacogni{
+        @include forma (0px, 0px);
+    }
+    &:hover div.infocogni{
+        height:300px;
+    }
+
+    @media screen and (max-width: 1080px) {
+        &:active div.portadapsic{
+        @include forma (0px, 0px);
+        }
+        
+        &:active div.infopsic{
+            height:500px;
+        
+        }
+    }
+}
+
+
+
+
