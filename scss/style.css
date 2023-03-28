@@ -3,12 +3,17 @@ body {
   background-image: url(../multimedia/6173954.jpg);
   background-position: center;
   background-size: contain;
-  opacity: 95%;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a:link, a:visited, a:active {
   text-decoration: none;
+}
+
+html {
+  height: 100%;
 }
 
 /*Barra de navegacion*/
@@ -23,6 +28,8 @@ a:link, a:visited, a:active {
 #pie-conteiner {
   background-color: rgba(255, 255, 255, 0.069);
   margin: 0.5rem;
+  justify-content: center;
+  margin-top: auto;
 }
 #pie-conteiner .pie-de-pagina {
   padding: 1rem;
@@ -196,6 +203,15 @@ a:link, a:visited, a:active {
 }
 #Psicotarjeta:hover div.infopsic {
   height: 300px;
+  animation: fadeInAnimation ease 1s;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1080px) {
   #Psicotarjeta:active div.portadapsic {
@@ -204,6 +220,15 @@ a:link, a:visited, a:active {
   }
   #Psicotarjeta:active div.infopsic {
     height: 500px;
+    animation: fadeInAnimation ease 1s;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
@@ -248,6 +273,15 @@ a:link, a:visited, a:active {
 }
 #cognitarjeta:hover div.infocogni {
   height: 300px;
+  animation: fadeInAnimation ease 1s;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1080px) {
   #cognitarjeta:active div.portadapsic {

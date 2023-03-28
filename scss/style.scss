@@ -17,6 +17,8 @@
 #pie-conteiner{
     background-color: $fondo-tranparente;
     margin: 0.5rem;
+    justify-content: center;
+    margin-top: auto;
     .pie-de-pagina{
         padding: 1rem;
         li {
@@ -151,6 +153,15 @@ input{
     }
     &:hover div.infopsic{
         height:300px;
+        animation: fadeInAnimation ease 1s ; 
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
 
     @media screen and (max-width: 1080px) {
@@ -160,7 +171,15 @@ input{
         
         &:active div.infopsic{
             height:500px;
-        
+                    animation: fadeInAnimation ease 1s ; 
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
         }
     }
 }
@@ -194,6 +213,15 @@ input{
     }
     &:hover div.infocogni{
         height:300px;
+        animation: fadeInAnimation ease 1s ; 
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
 
     @media screen and (max-width: 1080px) {
