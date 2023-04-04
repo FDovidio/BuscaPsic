@@ -16,6 +16,12 @@ html {
   height: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*Barra de navegacion*/
 #navbar {
   background-color: rgb(84, 134, 134);
@@ -27,9 +33,7 @@ html {
 /*Pie de pagina*/
 #pie-conteiner {
   background-color: rgba(255, 255, 255, 0.069);
-  margin: 0.5rem;
   justify-content: center;
-  margin-top: auto;
 }
 #pie-conteiner .pie-de-pagina {
   padding: 1rem;
@@ -47,6 +51,10 @@ html {
 }
 
 /*Index*/
+#card-index {
+  background-color: rgba(255, 255, 255, 0.069);
+}
+
 .carousel-inner {
   max-height: 700px;
 }
@@ -148,14 +156,6 @@ html {
   background-color: rgba(255, 255, 255, 0.069);
   color: white;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
-}
-.Introduccion span {
-  background-color: rgb(84, 134, 134);
-  color: white;
-  font-size: 50px;
-  border-radius: 1em;
   padding: 10px;
 }
 .Introduccion p {

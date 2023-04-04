@@ -16,9 +16,7 @@
 /*Pie de pagina*/
 #pie-conteiner{
     background-color: $fondo-tranparente;
-    margin: 0.5rem;
     justify-content: center;
-    margin-top: auto;
     .pie-de-pagina{
         padding: 1rem;
         li {
@@ -36,6 +34,10 @@
 }
 
 /*Index*/
+#card-index {
+    background-color: $fondo-tranparente;
+}
+
 .carousel-inner {
     max-height: 700px;
     #card img{
@@ -113,13 +115,6 @@ input{
     @include color ($fondo-tranparente, white);
     text-align: center;
     padding: 10px;
-    margin: 10px;
-    span {
-        @include color ($navbar-color, white);
-        font-size: 50px;
-        border-radius: 1em;
-        padding: 10px;
-    }
     p{
         margin: 20px;
     }

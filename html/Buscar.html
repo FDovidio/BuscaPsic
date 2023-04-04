@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Buscar</title>
+    <meta name="description" content="BuscaPsic es un buscador para encontrar tu psicologo mediante filtros que hacen de tu busqueda un proceso adaptado a tus necesidades">
+    <meta name="keywords" content="BuscaPsic, buscador, buscar, psicologo, analista, analisis, terapia, psicoanalista, cognitivo-conductual, tcc, terapia, busqueda">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link
     rel="stylesheet"
@@ -22,9 +24,9 @@
         <div class="col animate__animated animate__fadeInLeftBig animate__faster">
         <nav class="navbar navbar-expand-lg" id="navbar" >
         <div class="container-fluid animate__animated animate__fadeIn animate__slow">
-            <a class="navbar-brand" href="../Pre-entrega2-DovidioFrancisco/index.html">
-            <img src="../multimedia/kisspng-psychology-symbol-psychotherapist-semana-da-psicol-psicologa-social-5cc757fa32f1f8.8039736715565680582087(1).png" alt="Logo" width="30" height="35" class="d-inline-block align-text-center ms-2"></a>
-            <a class="navbar-brand" href="../index.html"><h3>BuscaPsic</h3></a>
+            <a class="navbar-brand" href="../index.html">
+            <img src="../multimedia/kisspng-psychology-symbol-psychotherapist-semana-da-psicol-psicologa-social-5cc757fa32f1f8.8039736715565680582087(1).png" alt="Logo-de-marca" width="30" height="35" class="d-inline-block align-text-center ms-2"></a>
+            <a class="navbar-brand" href="../index.html"><h2>BuscaPsic</h2></a>
             
         
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,14 +56,23 @@
             </div>
             </div>
     </div>
+
 <!--Banner-->
     <div class="conteiner-fluid">
         <div class="row">
             <div class="col">
-        <nav class="navbar navbar-light mt-2" id="banner">
+        <nav class="navbar navbar-light" id="banner">
+              <!--Breadcrumb-->
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb p-1 ">
+                <li><i class='bx bxs-home pe-1 ' style='color:#1a1eff'></i></li>
+                <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item active text-success" aria-current="page">Buscar</li>
+              </ol>
+              </nav>
             <div class="container-fluid p-4" id="banner-text">
-            <h1 class="navbar-text text-white">
-                Busca con nosotros <i class='bx bx-search-alt bx-rotate-90' ></i>
+            <h1 class="navbar-text text-white display-1 ">
+                Busca con nosotros
             </h1>
             </div>
         </nav>
@@ -123,6 +134,7 @@
 
     <!--Pie de pagina-->
     <div class="conteiner-fluid" >
+        <footer>
         <div class="row animate__animated animate__fadeIn animate__slower" id="pie-conteiner" >
         <div class="col-md-4  ">
         <section class="pie-de-pagina animate__animated animate__fadeIn animate__delay-1s ">
@@ -141,10 +153,11 @@
         <i class='bx bxl-instagram' style='color:#fffcfb' ></i>
     </div>
     <div class="col-md-4 animate__animated animate__fadeIn animate__delay-1s" id="">
-        <img src="../multimedia/índice.png" class="rounded float-center p-3 mt-2 mb-2" id="imagen-pie" alt="...">
+        <img src="../multimedia/índice.png" class="rounded float-center p-3 mt-2 mb-2" id="imagen-pie" alt="colegio-depsicologos-pba">
         
     </div>
     </div>
+    </footer>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
