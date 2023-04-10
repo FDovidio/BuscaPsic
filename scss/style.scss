@@ -8,9 +8,10 @@
 
 #navbar {
     background-color: $navbar-color ;
-    img{
-        margin-bottom: 10px;
+    h1{
+        color: rgba(255, 255, 255, 0.949);
     }
+
 }
 
 /*Pie de pagina*/
@@ -39,10 +40,18 @@
 }
 
 .carousel-inner {
-    max-height: 700px;
+    max-height: 900px;
     #card img{
         height: 20rem;
     }
+}
+.quienes-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+.quienes-somos-texto{
+    width:60%;
+}
 }
 
 /*Buscar*/
@@ -67,24 +76,25 @@ img{
 }
 
 /*Registrarse*/
-
+#ingresar{
+display: flex;
 .form-ingresg {
 @include flexible (flex, column, center, center, none);
 @include borde (none, $rounded );
 @include color ($navbar-color, rgba(255, 255, 255, 0.902) );
-max-width: 600px;
+width: 600px;
 input{
     @include borde (0, $rounded);
     background-color: rgb(212, 245, 245);
     padding: 5px;
 }
 }
-
+}
 .form-registrarse {
     @include flexible (flex, column, center, center, none);
 @include borde (none, $rounded );
 @include color (rgba(47, 108, 108, 0.741), rgba(255, 255, 255, 0.902) );
-max-width: 600px;
+width: 600px;
 input{
     @include borde (0, $rounded);
     background-color: rgb(212, 245, 245);
