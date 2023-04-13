@@ -139,7 +139,7 @@ html {
 }
 
 /*Contacto*/
-#contacto {
+.contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,7 +148,7 @@ html {
   background-color: rgb(84, 134, 134);
   color: white;
 }
-#contacto #consulta {
+.contacto #consulta {
   border: none;
   border-radius: 1em;
 }
@@ -296,11 +296,20 @@ html {
   }
 }
 @media screen and (max-width: 1080px) {
-  #cognitarjeta:active div.portadapsic {
+  #cognitarjeta:active div.portadacogni {
     width: 0px;
     height: 0px;
   }
-  #cognitarjeta:active div.infopsic {
+  #cognitarjeta:active div.infocogni {
     height: 500px;
+    animation: fadeInAnimation ease 1s;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }/*# sourceMappingURL=style.css.map */

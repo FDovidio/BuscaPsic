@@ -11,7 +11,6 @@
     h1{
         color: rgba(255, 255, 255, 0.949);
     }
-
 }
 
 /*Pie de pagina*/
@@ -104,7 +103,7 @@ input{
 
 /*Contacto*/
 
-#contacto {
+.contacto {
     @include flexible (flex, column, center, none, none);
     @include color ($navbar-color, white);
     #consulta{
@@ -230,13 +229,21 @@ input{
     }
 
     @media screen and (max-width: 1080px) {
-        &:active div.portadapsic{
+        &:active div.portadacogni{
         @include forma (0px, 0px);
         }
         
-        &:active div.infopsic{
+        &:active div.infocogni{
             height:500px;
-        
+                    animation: fadeInAnimation ease 1s ; 
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
         }
     }
 }
