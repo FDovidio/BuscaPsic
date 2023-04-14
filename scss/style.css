@@ -68,7 +68,14 @@ html {
   align-items: center;
 }
 .quienes-somos .quienes-somos-texto {
-  width: 60%;
+  width: 80%;
+  font-size: 180%;
+}
+@media screen and (max-width: 1080px) {
+  .quienes-somos .quienes-somos-texto {
+    width: 95%;
+    font-size: 110%;
+  }
 }
 
 /*Buscar*/
