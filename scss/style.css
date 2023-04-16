@@ -26,8 +26,17 @@ html {
 #navbar {
   background-color: rgb(84, 134, 134);
 }
+#navbar a {
+  color: rgb(255, 254, 254);
+}
+#navbar a:hover {
+  color: rgb(216, 222, 225);
+}
 #navbar h1 {
   color: rgba(255, 255, 255, 0.949);
+}
+#navbar #navbarSupportedContent {
+  justify-content: end;
 }
 
 /*Pie de pagina*/
@@ -54,6 +63,25 @@ html {
 #card-index {
   background-color: rgba(255, 255, 255, 0.069);
 }
+#card-index .card-text {
+  font-size: 140%;
+  color: rgba(179, 209, 214, 0.833);
+}
+@media screen and (max-width: 1080px) {
+  #card-index .card-text {
+    font-size: 110%;
+  }
+}
+#card-index .marca-logo img {
+  height: 15rem;
+  padding-bottom: 2%;
+}
+@media screen and (max-width: 1080px) {
+  #card-index .marca-logo img {
+    height: 7rem;
+    padding-bottom: 2%;
+  }
+}
 
 .carousel-inner {
   max-height: 900px;
@@ -69,7 +97,8 @@ html {
 }
 .quienes-somos .quienes-somos-texto {
   width: 80%;
-  font-size: 180%;
+  font-size: 140%;
+  color: rgba(179, 209, 214, 0.833);
 }
 @media screen and (max-width: 1080px) {
   .quienes-somos .quienes-somos-texto {
@@ -179,6 +208,13 @@ html {
 }
 .Introduccion p {
   margin: 20px;
+  color: rgba(179, 209, 214, 0.833);
+  font-size: 140%;
+}
+@media screen and (max-width: 1080px) {
+  .Introduccion p {
+    font-size: 110%;
+  }
 }
 
 #Psicotarjeta {

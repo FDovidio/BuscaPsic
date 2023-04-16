@@ -8,9 +8,20 @@
 
 #navbar {
     background-color: $navbar-color ;
+    a{
+    color: rgb(255, 254, 254);
+    &:hover {
+        color: rgb(216, 222, 225);
+    }
+    }
     h1{
         color: rgba(255, 255, 255, 0.949);
     }
+    #navbarSupportedContent{
+        justify-content: end;
+    }
+    
+
 }
 
 /*Pie de pagina*/
@@ -36,7 +47,27 @@
 /*Index*/
 #card-index {
     background-color: $fondo-tranparente;
+    .card-text{
+        font-size:140% ;
+        color: $color-parrafo;
+    @media screen and (max-width: 1080px) {
+        font-size: 110%;
+        }
+    }
+    .marca-logo{
+        img{
+            height: 15rem;
+            padding-bottom: 2%;
+            @media screen and (max-width: 1080px) {
+                height: 7rem;
+                padding-bottom: 2%;
+            }
+
+        }
+    }
+
 }
+
 
 .carousel-inner {
     max-height: 900px;
@@ -50,7 +81,8 @@
     align-items: center;
 .quienes-somos-texto{
     width:80%;
-    font-size: 180%;
+    font-size: 140%;
+    color: $color-parrafo;
     @media screen and (max-width: 1080px) {
     width: 95%;
     font-size: 110%;
@@ -132,7 +164,13 @@ input{
     padding: 10px;
     p{
         margin: 20px;
+        color: $color-parrafo;
+        font-size: 140%;
+        @media screen and (max-width: 1080px) {
+            font-size: 110%;
+            }
     }
+
 }
 
 #Psicotarjeta {
