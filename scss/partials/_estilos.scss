@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Barra de navegacion*/
+
+#navbar {
+    background-color: $navbar-color ;
+
+    a {
+        color: rgb(255, 254, 254);
+
+        &:hover {
+            color: rgb(216, 222, 225);
+        }
+    }
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        color: rgba(255, 255, 255, 0.949);
+    }
+
+    #navbarSupportedContent {
+        justify-content: end;
+    }
+}
+
+/*Pie de pagina*/
+#pie-conteiner {
+    background-color: $fondo-tranparente;
+    justify-content: center;
+
+    .pie-de-pagina {
+        padding: 1rem;
+
+        li {
+            padding: 4px;
+            list-style: none;
+        }
+
+        a {
+            color: white;
+        }
+    }
+
+    #imagen-pie {
+        height: 10rem;
+        background-color: $fondo-tranparente;
+    }
+}
+
+/*Index*/
+#card-index {
+    background-color: $fondo-tranparente;
+
+    .card-text {
+        font-size: 140%;
+        color: $color-parrafo;
+
+        @media screen and (max-width: 1080px) {
+            font-size: 110%;
+        }
+    }
+
+    .marca-logo {
+        img {
+            height: 15rem;
+            padding-bottom: 2%;
+
+            @media screen and (max-width: 1080px) {
+                height: 7rem;
+                padding-bottom: 2%;
+            }
+
+        }
+    }
+
+    .card-body {
+        h1 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        span {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #boton-2 {
+            color: $color-botonAlternativo
+        }
+    }
+}
+
+.carousel-inner {
+    max-height: 900px;
+
+    #card img {
+        height: 20rem;
+    }
+}
+
+.quienes-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .quienes-somos-texto {
+        width: 80%;
+        font-size: 140%;
+        color: $color-parrafo;
+
+        @media screen and (max-width: 1080px) {
+            width: 95%;
+            font-size: 110%;
+        }
+    }
+}
+
+/*Buscar*/
+
+#card {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(140, 170, 166, 0.938);
+
+    img {
+        height: 20rem;
+    }
+}
+
+
+.buscadorlateral {
+    @include color ($navbar-color, rgb(255, 255, 255));
+    @include borde (none, $rounded);
+    padding: 15px;
+
+    input {
+        background-color: $color-input;
+    }
+
+    @media screen and (max-width: 1080px) {
+        min-width: 50%;
+    }
+
+    #boton-3 {
+        color: $color-botonNegativo;
+    }
+}
+
+/*Registrarse*/
+#ingresar {
+    display: flex;
+
+    .form-ingresg {
+        @include flexible (flex, column, center, center, none);
+        @include borde (none, $rounded );
+        @include color ($navbar-color, rgba(255, 255, 255, 0.902));
+        width: 600px;
+
+        input {
+            @include borde (0, $rounded);
+            background-color: rgb(212, 245, 245);
+            padding: 5px;
+        }
+    }
+
+    #boton-3 {
+        color: $color-botonNegativo;
+    }
+}
+
+.form-registrarse {
+    @include flexible (flex, column, center, center, none);
+    @include borde (none, $rounded );
+    @include color (rgba(47, 108, 108, 0.741), rgba(255, 255, 255, 0.902));
+    width: 600px;
+
+    input {
+        @include borde (0, $rounded);
+        background-color: rgb(212, 245, 245);
+        padding: 5px;
+    }
+
+    #boton-3 {
+        color: $color-botonNegativo;
+    }
+}
+
+/*Contacto*/
+
+.contacto {
+    @include flexible (flex, column, center, none, none);
+    @include color ($navbar-color, white);
+
+    #consulta {
+        @include borde (none, $rounded);
+    }
+
+    #boton-3 {
+        color: $color-botonNegativo;
+    }
+
+}
+
+#banner {
+    @include color ($fondo-tranparente, none)
+}
+
+#banner-text {
+    display: flex;
+    justify-content: center;
+}
+
+/*Orientacion*/
+
+.introduccion {
+    @include color ($fondo-tranparente, white);
+    text-align: center;
+    padding: 10px;
+
+    p {
+        margin: 20px;
+        color: $color-parrafo;
+        font-size: 140%;
+
+        @media screen and (max-width: 1080px) {
+            font-size: 110%;
+        }
+    }
+}
+
+#psicotarjeta {
+    justify-self: center;
+    border-radius: $rounded;
+    background-color: $navbar-color;
+    overflow: hidden;
+
+    .portadapsic {
+        @include flexible (flex, none, center, center, none);
+        @include color ($navbar-color, none);
+
+        img {
+            @include forma (350px, 300px);
+            overflow: hidden;
+        }
+    }
+
+    .infopsic {
+        @include flexible (flex, column, none, center, none);
+        @include color ($navbar-color, none);
+        height: 0px;
+        overflow: hidden;
+        text-align: center;
+
+        h3 {
+            margin: 20px;
+        }
+    }
+
+    &:hover div.portadapsic {
+        @include forma (0px, 0px);
+    }
+
+    &:hover div.infopsic {
+        height: 300px;
+        animation: fadeInAnimation ease 1s;
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1080px) {
+        &:active div.portadapsic {
+            @include forma (0px, 0px);
+        }
+
+        &:active div.infopsic {
+            height: 500px;
+            animation: fadeInAnimation ease 1s;
+
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+#cognitarjeta {
+    justify-self: center;
+    border-radius: $rounded;
+    background-color: $navbar-color;
+    overflow: hidden;
+
+    .portadacogni {
+        @include flexible (flex, none, center, center, none);
+        @include color ($navbar-color, none);
+
+        img {
+            @include forma (350px, 300px);
+            overflow: hidden;
+        }
+    }
+
+    .infocogni {
+        @include flexible (flex, column, none, center, none);
+        @include color ($navbar-color, none);
+        height: 0px;
+        overflow: hidden;
+        text-align: center;
+
+        h3 {
+            margin: 20px;
+        }
+    }
+
+    &:hover div.portadacogni {
+        @include forma (0px, 0px);
+    }
+
+    &:hover div.infocogni {
+        height: 300px;
+        animation: fadeInAnimation ease 1s;
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1080px) {
+        &:active div.portadacogni {
+            @include forma (0px, 0px);
+        }
+
+        &:active div.infocogni {
+            height: 500px;
+            animation: fadeInAnimation ease 1s;
+
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
